@@ -1,0 +1,7 @@
+# Logs, pycache, system files
+*.log
+*.evtx
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
