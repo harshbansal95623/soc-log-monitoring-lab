@@ -1,0 +1,9 @@
+---
+rule:
+  id: 100100
+  level: 10
+  description: "Suspicious process launch detected"
+  conditions:
+    - field: syscall.exe
+      contains: ["nc", "netcat", "curl", "wget"]
+  output: "Possible suspicious utility used for lateral movement"
